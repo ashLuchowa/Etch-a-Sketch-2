@@ -87,3 +87,11 @@ button:last-child:hover {
     background-color: rgb(255, 60, 60);
     color: rgb(255, 255, 255);
 }
+
+
+/*----- GRID -----*/
+.inner-grid {
+    border: 2px solid rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
+}

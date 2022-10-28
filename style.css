@@ -90,8 +90,11 @@ button:last-child:hover {
 
 
 /*----- GRID -----*/
-.inner-grid {
-    border: 2px solid rgb(0, 0, 0);
-    height: 40px;
-    width: 40px;
-}
+
+.cell {
+    border: 1px solid rgb(0, 0, 0);
+    min-width: 30px;
+    min-height: 30px;
+    display: inline-block;
+    margin: 5px;
+  }

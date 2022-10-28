@@ -9,6 +9,8 @@
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 
@@ -21,6 +23,9 @@
 /*----- CANVA -----*/
 .main-canva {
     border: 7px solid black;
+    min-width: 650px;
+    min-height: 650px;
+    display: grid;
 }
 
 .main-content {

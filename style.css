@@ -1,6 +1,89 @@
+/*----- GENERAL -----*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/*----- HEADER -----*/
+.main-content h1 {
+    font-size: 120px;
+}
+
+
+/*----- CANVA -----*/
+.main-canva {
+    border: 10px solid black;
+    height: 900px;
+    width: 900px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*----- BUTTONS -----*/
+.main-btn {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 45vh;
+}
+
+.main-btn button {
+    border: 7px solid black;
+    border-left: 0px;
+    cursor: pointer;
+    background-color: white;
+    height: 70px;
+    width: 180px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.main-btn button:first-child {
+    margin-top: -160px;
+}
+
+.main-btn button:last-child {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+}
+
+button {
+    transition: .1s ease-in-out;
+}
+
+button:hover {
+    width: 200px;
+    background-color: black;
+    color: white;
+}
+
+button:last-child:hover {
+    border: 0px;
+    background-color: rgb(255, 60, 60);
+    color: rgb(255, 255, 255);
 }

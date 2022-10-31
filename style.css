@@ -26,8 +26,6 @@
     width: 650px;
     height: 650px;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
 }
 
 .main-content {

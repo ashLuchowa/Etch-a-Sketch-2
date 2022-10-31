@@ -23,9 +23,11 @@
 /*----- CANVA -----*/
 .main-canva {
     border: 7px solid black;
-    min-width: 650px;
-    min-height: 650px;
+    width: 650px;
+    height: 650px;
     display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
 }
 
 .main-content {
@@ -94,6 +96,8 @@ button:last-child:hover {
 /*----- GRID -----*/
 .square-pixel {
     border: 1px solid black;
-    width: 50px;
-    height: 50px;
+}
+
+.cell {
+    
 }

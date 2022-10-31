@@ -1,17 +1,88 @@
 //Selectors
 const canva = document.querySelector('.main-canva');
-
-//1 square pixel
-const square = document.createElement('div');
-square.classList.add('square-pixel');
-canva.appendChild(square);
+let gridSize = 16;
 
 
+//Create grid
 
-//Grid
-function gridSize(setSize) {
-    
+//grid row
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
 }
-
-//Default Grid Size
-gridSize(16);
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}
+for (let r = 0; r < gridSize; r++) {
+    const square = document.createElement('div');
+    square.classList.add('square-pixel');
+    canva.appendChild(square);
+}

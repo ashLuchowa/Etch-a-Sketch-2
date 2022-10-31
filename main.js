@@ -5,9 +5,6 @@ const canva = document.querySelector('.main-canva');
 let cells = 16;
 canva.style.setProperty('grid-template-columns', `repeat(${cells}, 1fr)`)
 
-//change grid size
-
-
 //Create grid cells
 //grid row
 for (let r = 0; r < cells; r++) {
@@ -16,12 +13,9 @@ for (let r = 0; r < cells; r++) {
     canva.appendChild(square);
 
     //grid column
-    for (let c = 0; c < cells -1; c++) {
+    for (let c = 0; c < cells - 1; c++) {
         const square = document.createElement('div');
         square.classList.add('square-pixel');
         canva.appendChild(square);
     }
 }
-
-//change grid size to 32
-gridSize(32);

@@ -1,7 +1,6 @@
 //Selectors
 const canva = document.querySelector('.main-canva');
 const blackBtn = document.querySelector('button');
-let cells = 10;
 
 
 //-------------- THE GRID --------------//

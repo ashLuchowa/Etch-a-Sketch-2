@@ -17,8 +17,6 @@ function grid(cells) {
     clickColorGrid();
 
 }
-//default size
-grid(16);
 
 
 //-------------- GRID FUNCTIONS --------------//
@@ -74,3 +72,7 @@ sizeBtn.addEventListener('click', () => {
     let size = prompt('set a grid size', '1-100');
     size > 0 && size <= 100 ? grid(size) : grid(16);
 });
+
+
+//default size
+grid(16);

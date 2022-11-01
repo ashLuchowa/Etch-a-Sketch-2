@@ -5,6 +5,7 @@ const blackBtn = document.querySelector('#black-btn');
 const redBtn = document.querySelector('#red-btn');
 const eraseBtn = document.querySelector('#erase-btn');
 const clearBtn = document.querySelector('#clear-btn');
+const rainbowBtn = document.querySelector('#rainbow-btn');
 
 
 //-------------- THE GRID --------------//
@@ -15,8 +16,10 @@ function grid(cells) {
     gridRow();
     gridColumn(cells);
     clickColorGrid();
-
 }
+
+//default size
+grid(16);
 
 
 //-------------- GRID FUNCTIONS --------------//
@@ -40,8 +43,7 @@ function gridColumn(cells) {
 }
 //mouse color
 function gridColor(color) {
-    let pixels = document.querySelectorAll('.square-pixel');
-    color;
+    let pixels = canva.querySelectorAll('div');
 
     for (let i = 0; i < pixels.length; i++) {
         pixels[i].addEventListener('mouseover', () => {
@@ -49,6 +51,7 @@ function gridColor(color) {
         });
     }
 }
+
 //click and color
 function clickColorGrid() {
     blackBtn.addEventListener('click', () => {
@@ -64,6 +67,10 @@ function clickColorGrid() {
         let squares = canva.querySelectorAll('div');
         squares.forEach((div) => div.style.backgroundColor = '');
     });
+    rainbowBtn.addEventListener('click', (e) => {
+        gridColor("rgb(" + e.offsetX + "," + e.offsetY + "," + e.offsetX + ")");
+    });
+
 }
 
 
@@ -72,7 +79,3 @@ sizeBtn.addEventListener('click', () => {
     let size = prompt('set a grid size', '1-100');
     size > 0 && size <= 100 ? grid(size) : grid(16);
 });
-
-
-//default size
-grid(16);

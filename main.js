@@ -2,7 +2,7 @@
 const canva = document.querySelector('.main-canva');
 const sizeBtn = document.querySelector('#size-btn');
 const blackBtn = document.querySelector('#black-btn');
-
+const redBtn = document.querySelector('#red-btn');
 
 //-------------- THE GRID --------------//
 //generate grid
@@ -25,20 +25,22 @@ function grid(cells) {
             canva.appendChild(square);
         }
     }
+
+    //-------------- COLOR EVENT --------------//
+    let pixels = document.querySelectorAll('.square-pixel');
+
+    for (let i = 0; i < pixels.length; i++) {
+        pixels[i].addEventListener('mouseover', () => {
+            pixels[i].style.backgroundColor = 'black';
+        });
+    }
 }
 
 //default size
 grid(16);
 
 
-//-------------- COLOR EVENT --------------//
-const pixels = document.querySelectorAll('.square-pixel');
 
-for (let i = 0; i < pixels.length; i++) {
-    pixels[i].addEventListener('click', () => {
-        pixels[i].style.backgroundColor = 'black';
-    });
-}
 
 
 //-------------- BUTTONS --------------//

@@ -4,29 +4,41 @@ const sizeBtn = document.querySelector('#size-btn');
 const blackBtn = document.querySelector('#black-btn');
 const redBtn = document.querySelector('#red-btn');
 
+
 //-------------- THE GRID --------------//
-//generate grid
 function grid(cells) {
     canva.style.setProperty('grid-template-columns', `repeat(${cells}, 1fr)`);
     let squares = canva.querySelectorAll('div');
     squares.forEach((div) => div.remove());
+    gridRow();
+    gridColumn(cells);
+    gridColor();
+}
+//default size
+grid(16);
 
-    //rows
+
+//-------------- FUNCTIONS --------------//
+//generate row
+function gridRow(cells) {
     for (let r = 0; r < cells; r++) {
         const square = document.createElement('div');
         square.classList.add('square-pixel');
         canva.appendChild(square);
     }
-    //columns
-    for (let r = 0; r < cells - 1; r++) {
+}
+//generate column
+function gridColumn(cells) {
+    for (let r = 0; r < cells; r++) {
         for (let c = 0; c < cells; c++) {
             const square = document.createElement('div');
             square.classList.add('square-pixel');
             canva.appendChild(square);
         }
     }
-
-    //-------------- COLOR EVENT --------------//
+}
+//grid coloring
+function gridColor() {
     let pixels = document.querySelectorAll('.square-pixel');
 
     for (let i = 0; i < pixels.length; i++) {
@@ -35,12 +47,6 @@ function grid(cells) {
         });
     }
 }
-
-//default size
-grid(16);
-
-
-
 
 
 //-------------- BUTTONS --------------//

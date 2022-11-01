@@ -1,6 +1,7 @@
 //-------------- SELECTORS --------------//
 const canva = document.querySelector('.main-canva');
-const sizeButton = document.querySelector('#size-btn');
+const sizeBtn = document.querySelector('#size-btn');
+const blackBtn = document.querySelector('#black-btn');
 
 
 //-------------- THE GRID --------------//
@@ -25,12 +26,24 @@ function grid(cells) {
         }
     }
 }
+
 //default size
 grid(16);
 
 
-//-------------- SET SIZE BUTTON --------------//
-sizeButton.addEventListener('click', () => {
+//-------------- COLOR EVENT --------------//
+const pixels = document.querySelectorAll('.square-pixel');
+
+for (let i = 0; i < pixels.length; i++) {
+    pixels[i].addEventListener('click', () => {
+        pixels[i].style.backgroundColor = 'black';
+    });
+}
+
+
+//-------------- BUTTONS --------------//
+//set size btn
+sizeBtn.addEventListener('click', () => {
     let size = prompt('set a grid size', '1-100');
     size > 0 && size <= 100 ? grid(size) : grid(16);
 });
